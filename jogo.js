@@ -244,6 +244,8 @@ function Snake(){
       //quando pega a maçã,a minhoca cresce e a maçã vai para outro lugar
       if(Math.floor(this.body[0][0]) == Math.floor(apple1.body[0]) && Math.floor(this.body[0][1]) == Math.floor(apple1.body[1])){
         this.body.splice(this.body.length , 0, nextPos);
+        // let snakeAudio = new Audio(/*Url do Audio*/);
+        // snakeAudio.play();
         pts++;
         saldo++;
         localStorage.setItem('saldo-atual', saldo);
